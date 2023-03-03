@@ -16,7 +16,6 @@ headers = {
     'Content-Type': 'application/json',
     'Authorization': API_KEY
 }
-print(headers)
 response = requests.request("GET", url, headers=headers, data=payload)
 raw_log_list = json.loads(response.text)
 if os.path.isfile(file):
