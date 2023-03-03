@@ -1,0 +1,43 @@
+
+<group name="Okta">
+<rule id="789007" level="5">
+   <decoded_as>json</decoded_as>
+   <field name="Log_type">Okta</field>
+   <description>Okta Log</description>
+</rule>
+<rule id="789008" level="7">
+        <if_sid>789007</if_sid>
+	<field name="displayMessage">User login to Okta</field>
+        <description>User login to Okta</description>
+</rule>
+<rule id="789009" level="7">
+        <if_sid>789007</if_sid>
+        <field name="displayMessage">Evaluation of sign-on policy</field>
+        <description>Evaluation of sign-on policy</description>
+</rule>
+<rule id="789010" level="7">
+        <if_sid>789007</if_sid>
+        <field name="displayMessage">Verify user identity</field>
+        <description>Verify user identity</description>
+</rule>
+<rule id="789011" level="7">
+        <if_sid>789007</if_sid>
+        <field name="displayMessage">User single sign on to app</field>
+        <description>User single sign on to app</description>
+</rule>
+<rule id="789012" level="7">
+        <if_sid>789007</if_sid>
+        <field name="displayMessage">Authentication of user via MFA</field>
+        <description>Authentication of user via MFA</description>
+</rule>
+<rule id="789013" level="7">
+        <if_sid>789007</if_sid>
+        <field name="displayMessage">Authentication of device via certificate</field>
+        <description>Authentication of device via certificate</description>
+</rule>
+<rule id="789014" level="7">
+        <if_sid>789007</if_sid>
+        <field name="displayMessage">A push was sent to a user for verification</field>
+        <description>A push was sent to a user for verification</description>
+</rule>
+</group>
